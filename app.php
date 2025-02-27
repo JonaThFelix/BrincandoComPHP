@@ -11,22 +11,4 @@ $resposta = calc(1.80,80);            // Aqui faço o input dos valores definido
 echo $resposta;                       // Aqui trará a resposta da operação;
 ?>
 
-// FAZENDO A MESMA ATIVIDADE, MAS USANDO O NUMBER FORMAT PARA DEFINIR AS CASAS DECIMAIS
-<?php
 
-/* Atividade 3P Unibra - LPCS 2025.1
-Aluno: Jonathan José Felix Xavier 
-Matrícula: 2022252190
-Objetivo: Calcular IMC
-*/
-
-function imc ($peso,$altura){
-    $resultado = $peso / ($altura ** 2);
-    return $resultado;
-}
-
-$resposta = imc (80,1.80);
-    $formatado = number_format($resposta,2);
-    echo "O Imc foi: $formatado.";
-
-?>
